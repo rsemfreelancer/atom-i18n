@@ -28,8 +28,9 @@ describe('validation', () => {
       const loading = () => {
         packageMeta = JSON.parse(fs.readFileSync('./package.json'), 'utf8')
       }
-      expect(loading, 'load package.json error').not.to.throw(Error)
+      expect(loading).not.to.throw(Error, 'load package.json error')
     })
+    // NOTE WIP PROGRESS BAR
 
     it('checks locale options list in configSchema in package.json', () => {
       const locales = packageMeta.configSchema.locale.enum.map(opt => opt.value)

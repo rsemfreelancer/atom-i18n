@@ -101,6 +101,10 @@
           "description": "繁體中文 (zh-tw)"
         },
         {
+          "value": "uk-sk",
+          "description": "Українська (скрипниківка)"
+        },
+        {
           "value": "template",
           "description": "English (en)"
         }
